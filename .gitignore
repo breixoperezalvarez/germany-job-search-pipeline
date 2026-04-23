@@ -1,0 +1,17 @@
+__pychache__/
+*.pyc
+
+.idea/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Ignore raw data
+data/raw/*
+!data/raw/.gitkeep
+
+# Ignore processed data except final output
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/filtered_jobs.csv
