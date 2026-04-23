@@ -1,4 +1,4 @@
-__pychache__/
+__pycache__/
 *.pyc
 
 .idea/
@@ -7,11 +7,11 @@ venv/
 .env
 .ipynb_checkpoints/
 
-# Ignore raw data
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/arbeitnow_jobs.json
+!data/raw/remotive_jobs.json
 
-# Ignore processed data except final output
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/filtered_jobs.csv
