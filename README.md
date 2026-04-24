@@ -16,7 +16,7 @@ The final result is a clean, deduplicated dataset of relevant job offers in `.cs
 
 ---
 
-## ⚙️ Features
+## Features
 
 - Multi-source aggregation  
   - Arbeitnow API  
