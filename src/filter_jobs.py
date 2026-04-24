@@ -109,17 +109,13 @@ def is_relevant_job(row: pd.Series) -> bool:
     combined_text = " ".join([title, company, location, tags, job_type, description])
 
     has_target_keyword = any(keyword in combined_text for keyword in TARGET_KEYWORDS)
+
     matches_city = any(city in location for city in TARGET_CITIES)
-    matches_remote = bool(remote) or any(keyword in combined_text for keyword in REMOTE_KEYWORDS)
+    matches_remote = bool(remote) or any(keyword in location for keyword in REMOTE_KEYWORDS)
 
-    germany_related = (
-        "germany" in combined_text
-        or "deutschland" in combined_text
-        or matches_city
-        or matches_remote
-    )
+    location_ok = matches_city or matches_remote
 
-    return has_target_keyword and germany_related
+    return has_target_keyword and location_ok
 
 def filter_jobs(df: pd.DataFrame) -> pd.DataFrame:
     """Filter DataFrame to relevant jobs and remove duplicates"""
