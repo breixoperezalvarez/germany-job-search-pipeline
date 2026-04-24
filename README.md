@@ -1,6 +1,6 @@
 # Germany Job Search Pipeline
 
-A Python-based data pipeline that aggregates, filters, and outputs relevant job opportunities for students seeking internships or entry-level roles in Germany.
+A Python-based data pipeline that aggregates, filters, and outputs relevant job opportunities in order to help me in my seek of internships or entry-level roles in Germany.
 
 ---
 
@@ -58,8 +58,8 @@ This ensures that only realistic and accessible opportunities are kept.
 
 ## How to Run
 
-git clone https://github.com/your-username/germany-job-search-pipeline.git
-cd germany-job-search-pipeline
-pip install -r requirements.txt
-python main.py
-data/processed/filtered_jobs.csv
+- git clone https://github.com/your-username/germany-job-search-pipeline.git
+- cd germany-job-search-pipeline
+- pip install -r requirements.txt
+- python main.py
+- data/processed/filtered_jobs.csv
