@@ -8,7 +8,7 @@ A Python-based data pipeline that aggregates, filters, and outputs relevant job 
 
 This project automatically collects job postings from multiple APIs and filters them based on:
 
-- Location (Tübingen area or remote)
+- Location (Tübingen area, big cities or remote)
 - Relevant technical keywords (Python, AI, Software, etc.)
 - Student-friendly roles (internships, working student, junior)
 
